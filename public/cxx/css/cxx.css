@@ -1,0 +1,314 @@
+/**
+ * @ Name: reset.css 
+ * @ Author: chunye.zhao
+ * @ Create: 2014-05-04 11:11:00
+ * @ Usage: all pages
+ * @ Version: 1
+ * **/
+/******************************************************************************/
+/*css reset*/
+/* *****************************************************************************
+ * index 
+ * ************************************************************************** */
+/**
+ * @ Name: reset.css 
+ * @ Author: chunye.zhao
+ * @ Create: 2014-05-04 11:11:00
+ * @ Usage: all pages
+ * @ Version: 1
+ * **/
+/*****************************************************************************/
+/*css reset*/
+body, form, input, ul, ol, dl, dd, p, h1, h2, h3, h4, h5, h6, figure {
+  margin: 0;
+}
+
+ul, ol, input {
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a img {
+  border: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:hover {
+  outline: none;
+  text-decoration: underline;
+}
+
+i, em {
+  font-style: normal;
+}
+
+b, em {
+  font-weight: normal;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "\0020";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/**
+ * @ Name: font.css 
+ * @ Author: chunye.zhao
+ * @ Create: 2014-05-04 11:11:00
+ * @ Usage: all pages
+ * @ Version: 1
+ * **/
+/* ************************************************************************** */
+/* css font */
+@font-face {
+  font-family: 'Bell MT';
+  src: url("../font/Bell_MT.eot");
+  /* IE9 Compat Modes */
+  src: url("../font/Bell_MT.eot?#iefix") format("embedded-opentype"), url("../font/Bell_MT.woff") format("woff"), url("./font/Bell_MT.ttf") format("truetype"), url("./font/Bell_MT.svg#Bell MT") format("svg");
+  /* Legacy iOS */
+}
+
+body {
+  font-family: 'bell mt', georgia, 'times new roman', serif;
+}
+
+header {
+  width: 1000px;
+  margin: 0 auto;
+}
+header nav {
+  height: 140px;
+  line-height: 140px;
+  width: 100%;
+  overflow: hidden;
+}
+header nav a {
+  color: #000;
+  font-size: 1em;
+  display: inline-block;
+  position: relative;
+}
+header nav a:nth-child(1) {
+  width: 200px;
+}
+header nav a:after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  margin: 0 0 0 -5px;
+  content: " ";
+  background: #000;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+header nav a + a {
+  margin: 0 50px 0 0;
+}
+header nav a.active {
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: none;
+}
+header nav a:hover:after {
+  opacity: 1;
+}
+
+.p-list {
+  width: 1000px;
+  margin: 0 auto;
+}
+.p-list dl {
+  width: 100%;
+}
+.p-list dl dt {
+  width: 200px;
+  float: left;
+  font-size: 1em;
+  line-height: 100px;
+}
+.p-list dl dd {
+  margin: 0 0 0 200px;
+}
+.p-list ul {
+  width: 100%;
+  padding: 0 0 50px 0;
+}
+.p-list ul li {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  width: 20px;
+  height: 100px;
+  background: #fe3e64;
+  overflow: hidden;
+  margin: 0 55px 0 0;
+  float: left;
+  cursor: pointer;
+}
+.p-list ul li:hover img {
+  margin: 0;
+}
+.p-list ul li img {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  height: 100px;
+  margin: 0 0 0 20px;
+}
+
+/* ** *
+ * work
+ * ** */
+.work {
+  margin: 0 auto;
+  width: 1000px;
+  height: 400px;
+  position: relative;
+}
+.work .prev {
+  position: absolute;
+  height: 400px;
+  width: 100px;
+  top: 0px;
+  left: 0px;
+}
+.work .prev:before {
+  position: absolute;
+  top: 195px;
+  left: 50px;
+  height: 10px;
+  width: 40px;
+  content: " ";
+  background: rgba(0, 0, 0, 0.1);
+}
+.work .prev:hover:before {
+  background: black;
+}
+.work .next {
+  position: absolute;
+  height: 400px;
+  width: 100px;
+  top: 0px;
+  right: 0px;
+}
+.work .next:before {
+  position: absolute;
+  top: 195px;
+  right: 50px;
+  height: 10px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  content: " ";
+}
+.work .next:hover:before {
+  background: black;
+}
+.work .img-list {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.work .img-list li {
+  width: 800px;
+  height: 400px;
+}
+.work .img-list figure {
+  display: inline-block;
+  padding: 10px;
+  background: black;
+  height: 380px;
+  max-width: 780px;
+}
+.work .img-list figure img {
+  height: 100%;
+  max-width: 100%;
+}
+.work .title {
+  padding: 12px 0 145px 100px;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+}
+.work .text {
+  padding: 0 100px 70px 450px;
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ** *
+ * photo
+ * ** */
+.photo {
+  margin: 0 auto;
+  width: 600px;
+  overflow: hidden;
+  padding: 0 0 200px 0;
+}
+.photo ul {
+  margin: -60px 0 0 -75px;
+}
+.photo ul li {
+  height: 100px;
+  width: 150px;
+  margin: 60px 0 0 75px;
+  float: left;
+  line-height: 100px;
+  text-align: center;
+}
+.photo ul li img {
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: center;
+}
+
+/* ** *
+ * exhibition
+ * ** */
+/* ** *
+ * conteact
+ * ** */
+.conteact {
+  margin: 0 auto;
+  width: 470px;
+  padding: 0 130px 0 0;
+  position: relative;
+  padding: 24px 0 20px 0;
+}
+.conteact:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 40px;
+  content: " ";
+  background: black;
+}

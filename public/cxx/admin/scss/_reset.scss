@@ -1,0 +1,47 @@
+/**
+ * @ Name: reset.css 
+ * @ Author: chunye.zhao
+ * @ Create: 2014-05-04 11:11:00
+ * @ Usage: all pages
+ * @ Version: 1
+ * **/
+/*****************************************************************************/
+/*css reset*/
+body, form, input, ul, ol, dl, dd, p, h1, h2, h3, h4, h5, h6, figure {
+  margin:0;
+}
+body {
+  word-wrap: break-word;
+  word-break: break-all;
+  font: 12px/20px "Microsoft YaHei", SimHei, Verdana, Arial, sans-serif;
+}
+ul, ol, input {
+  padding:0;
+}
+ul, ol {
+  list-style:none;
+}
+a img {
+  border:none;
+}
+a {
+  outline:none;text-decoration:none;
+}
+a:hover {
+  outline:none;text-decoration:underline;
+}
+i, em {
+  font-style:normal;
+}
+b, em {
+  font-weight:normal;
+}
+.clearfix:before, .clearfix:after {
+  content:"\0020";display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  *zoom:1;
+}
